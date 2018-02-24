@@ -2,12 +2,12 @@ package p02_classesAndFunctions.t12_Typealias.good
 
 class Event
 
-typealias ClickHandler = (Event) -> Unit
+typealias EventHandler = (Event) -> Unit
 
 class EventDispatcher {
-    fun addClickHandler(handler: ClickHandler) {
+    fun addClickHandler(handler: EventHandler) {
     }
 
-    fun removeClickHandler(handler: ClickHandler) {
+    fun removeClickHandler(handler: EventHandler) {
     }
 }
