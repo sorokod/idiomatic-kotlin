@@ -1,4 +1,4 @@
-package p02_classesAndFunctions.t07_MemberExtensionFunctions.good
+package p02_classesAndFunctions.t09_MemberExtensionFunctions.good
 
 class Person(val firstName: String,
              val lastName: String)
