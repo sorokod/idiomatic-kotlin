@@ -5,11 +5,10 @@ sealed class Maybe<out T> {
     data class Just<out T>(val value: T) : Maybe<T>()
 }
 
-fun <T> handleResult(maybe: Maybe<T>) {
-    when (maybe) {
-        Maybe.None -> println("None")
-        is Maybe.Just -> println("Just: ${maybe.value}")
-    }
+fun <T> handleResult(maybe: Maybe<T>) = when (maybe) {
+    is Maybe.None -> println("None")
+    is Maybe.Just -> println("Just: ${maybe.value}")
+
 }
 
 fun main(args: Array<String>) {
